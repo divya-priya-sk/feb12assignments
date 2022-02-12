@@ -1,0 +1,34 @@
+#program to prepare super market bill
+peas=30
+oil=120
+sugar=100
+toothpaste=50
+greengram=70
+cname=input('Enter customer name:')
+cphno=int(input('Enter customer phone number:'))
+p=int(input('Enter no of peas packets:'))
+o=int(input('Enter noo of oil packet:'))
+s=int(input('Enter no of sugar packet:'))
+t=int(input('Enter no of toothpaste packets:'))
+ggm=int(input('Enter no of greengram packets:'))
+bill=(peas*p)+(oil*o)+(sugar*s)+(toothpaste*t)+(greengram*ggm)
+print(bill)
+if bill>5000:
+    dis=bill*10/100
+    print(dis)
+elif bill>3000:
+    dis=bill*8/100
+    print(dis)
+elif bill>2000:
+    dis=bill*5/100
+    print(dis)
+elif bill>1000:
+    dis=bill*3/100
+    print(dis)
+elif bill<1000:
+    tax=bill*10/100
+    print(tax)
+else:
+    tax=bill*18/100
+    print(tax)
+              
